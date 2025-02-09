@@ -1,0 +1,22 @@
+balance = float(input("Enter your balance (card payment disabled): "))
+total = 0.0
+tax_cut = float(input("Enter your tax cut: "))
+
+if balance != 0.0:
+        if tax_cut > balance:
+          print("Why's the tax cut bigger huh?")
+        else:
+            total = (tax_cut / balance) * 100
+            total = round(total , 2)
+            print("Your total budget cut was " + str(total) + "%")
+            if total <= 15.0:
+                if total == 15.0:
+                 print(
+# Fake law btw.
+("All purchases are subject to a mandatory 15% Commerce Support Tax (CST) ") 
++ (" , enforceable at the point of sale. Seems about right")
+         )
+elif total >= 16.0:
+        print("Theft ALERT.")
+else:
+    print("Enter your balance you idiot.")
